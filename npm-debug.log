@@ -1,0 +1,16 @@
+8766 error Error: read ECONNRESET
+8766 error     at errnoException (net.js:863:11)
+8766 error     at TCP.onread (net.js:524:19)
+8767 error If you need help, you may report this log at:
+8767 error     <http://github.com/isaacs/npm/issues>
+8767 error or email it to:
+8767 error     <npm-@googlegroups.com>
+8768 error System Windows_NT 6.1.7601
+8769 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+8770 error cwd C:\Projects\yo-angular-seed
+8771 error node -v v0.10.0
+8772 error npm -v 1.2.14
+8773 error syscall read
+8774 error code ECONNRESET
+8775 error errno ECONNRESET
+8776 verbose exit [ 1, true ]

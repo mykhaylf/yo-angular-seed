@@ -20,7 +20,23 @@ so modules will be placed on independent brach too. Mentioned modules are taken 
   Angular aplication innitalizing
 ```bash
   $ yo angular yoAngularSeed
-```
+  [?] Would you like to include Twitter Bootstrap? (Y/n) Y
+  [2K?] Would you like to include Twitter Bootstrap? Yes
+  [?] Would you like to use Twitter Bootstrap for Compass (as opposed to vanilla CSS)? (Y/n) Y
+  ?] Would you like to use Twitter Bootstrap for Compass (as opposed to vanilla CSS)? Yes
+  [?] Would you like to include angular-resource.js? (Y/n) Y
+  ?] Would you like to include angular-resource.js? Yes
+  [?] Would you like to include angular-cookies.js? (Y/n) N
+  [2K[1A?] Would you like to include angular-cookies.js? No
+  [?] Would you like to include angular-sanitize.js? (Y/n) N
+  [2K   create app/styles/main.scss
+  [1A[2K   create[?] Would you like to include angular-sanitize.js? No
+   app\index.html
+     createI'm all done....
+ ```
+ then after answering questions about base most-popular dependencies
+
+By default dower_component folder is ignored,
 
 #### Step-2
   Run dev server with grunt. Making changes in generated files
@@ -85,8 +101,10 @@ Program: C:\Program Files\nodejs\node.exe
 
 ; Here specify node binary to run (in our case its yo), in exaple uses globaly installed package
 ; then specify parameters for binary (in example its angular subgenerator for route), next value is $Prompt$
+; $Prompt$ is not limited to one parameter, you can pass any you want separated by spaces
+; Case: after controller/service/etc you can provide list of dependency injection
 ; this is standard makro for Idea-based IDE, you need to specify route name to start task
-; tasks like `grunt server` will be assigned statically
+; tasks like `grunt server` will be assigned static
 Parameters: C:\Users\{current user}\AppData\Roaming\npm\node_modules\yo\bin\yo angular:route $Prompt$
 
 ; This macro will return current project root directory path
